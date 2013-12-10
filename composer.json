@@ -1,0 +1,25 @@
+{
+    "config": {
+        "vendor-dir": "protected/vendor"
+    },
+    "require": {
+        "yiisoft/yii": "1.1.*"
+    },
+    "autoload": {
+        "psr-0": { "yii\\composer": "" }
+    },
+    "scripts": {
+		"pre-update-cmd": [
+			"yii\\composer\\InstallHandler::preUpdate"
+		],
+		"pre-install-cmd": [
+			"yii\\composer\\InstallHandler::preInstall"
+		],
+		"post-update-cmd": [
+			"yii\\composer\\InstallHandler::postUpdate"
+		],
+		"post-install-cmd": [
+			"yii\\composer\\InstallHandler::postInstall"
+		]
+	}
+}
