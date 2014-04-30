@@ -1,6 +1,19 @@
 Consumer Track Exercise
 =====================
 
+## Exercises
+
+- Write a RESTful web service called bank-rate to retrieve bank rates for different states/cities. Clients are authorized to access the service by passing api key provided offline in the header (-H "Authorization: asd123sdsa3123s1") The service will support both GET and POST. Bank rates are stored in a table called bank_rate in db.
+
+###### Desired Features:
+
+- retrieve rates for one or multiple cities.
+- ability to limit 100 GET/POST requests per minute per user
+
+(Please provide db schema for bank_rate table.)
+
+- Write a RESTful web service called rates to allow user to perform add/update/delete operations on a list of rates supported by the application.
+
 ## Requirements
 
 - [Composer](http://getcomposer.org/download/)
@@ -31,6 +44,5 @@ Consumer Track Exercise
 - Delete Rate
 -- domain.com/rate/delete?key=DEV&city=Test
 ```
-
 
 
